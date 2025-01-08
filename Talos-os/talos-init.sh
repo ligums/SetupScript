@@ -50,4 +50,16 @@ if [ ${#WORKER_NODES[@]} -gt 0 ]; then
     done
 fi
 
-echo "Talos control plane and worker nodes setup completed successfully."
+# Generate kubeconfig for Kubernetes cluster access
+echo "Generating Kubernetes kubeconfig..."
+if ! talosctl kubeconfig . --endpoints $CONTROL_PLANE_IP --nodes $CONTROL_PLANE_IP; then
+    echo "Failed to generate Kubernetes kubeconfig" >&2
+    exit 1
+fi
+
+# Move kubeconfig to the default Kubernetes configuration location
+echo "Moving kubeconfig to ~/.kube/config..."
+mkdir -p ~/.kube
+mv kubeconfig ~/.kube/config
+
+echo "Talos control plane, worker nodes, and Kubernetes access setup completed successfully."
