@@ -26,8 +26,12 @@ if ! talosctl apply-config --insecure --nodes $CONTROL_PLANE_IP --file "$TALOSDI
     exit 1
 fi
 
+echo 30s sleep
+sleep 30
+
 # Set the Talos endpoint and node configuration
 echo "Setting Talos endpoint and node configuration..."
+cp "$TALOSCONFIG" ./.talos/config
 talosctl config endpoint $CONTROL_PLANE_IP
 talosctl config node $CONTROL_PLANE_IP
 
