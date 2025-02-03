@@ -23,12 +23,3 @@ The script performs the following steps:
 
 ## Usage
 
-### 1. Download the Script
-
-Download this repository to your local machine.
-
-```bash
-wget https://raw.githubusercontent.com/ligums/SetupScript/main/Node-exporteur/exporteur.sh
-chmod +x exporteur.sh
-./exporteur.sh
-

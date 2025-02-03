@@ -10,3 +10,6 @@ I created this script to automate the repetitive and sometimes tedious process o
 - Configures system settings and environment variables.
 - Sets up version control and configuration management tools.
 - Provides the option to install custom tools and applications (personalized to my workflow).
+
+## TL;DR
+I use AI to create scripts that automate the setup of environments, making it faster and more efficient. I gather all necessary commands along with their documentation to ensure everything works as expected. 
