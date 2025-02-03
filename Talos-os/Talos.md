@@ -23,9 +23,11 @@ The script performs the following steps:
 
 ## Usage
 
-1. Clone or download this repository.
-2. Ensure `talosctl` is installed:
-   ```bash
-   # Example installation command
-   curl -Lo /usr/local/bin/talosctl https://github.com/siderolabs/talos/releases/latest/download/talosctl-$(uname -s)-$(uname -m)
-   chmod +x /usr/local/bin/talosctl
+### 1. Download the Script
+
+Download this repository to your local machine.
+
+```bash
+wget https://raw.githubusercontent.com/ligums/SetupScript/main/Talos/talos-init.sh
+chmod +x talos-init.sh
+./talos-init.sh

@@ -33,7 +33,11 @@ This script automates the installation and configuration of NVIDIA drivers, CUDA
 
 ## Usage
 
-1. Clone or download this repository to your system:
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+### 1. Download the Script
+
+Download this repository to your local machine.
+
+```bash
+wget https://raw.githubusercontent.com/ligums/SetupScript/main/jellyfin-nvidia/jellyfin.sh
+chmod +x jellyfin.sh
+./jellyfin.sh
