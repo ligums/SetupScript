@@ -23,9 +23,11 @@ The script performs the following steps:
 
 ## Usage
 
-### 1. Download or Clone the Repository
-Clone or download this repository to your local machine.
+### 1. Download the Script
+
+Download this repository to your local machine.
 
 ```bash
-git clone https://github.com/your-repository/node_exporter-installation
-cd node_exporter-installation
+wget https://raw.githubusercontent.com/ligums/SetupScript/main/Node-exporteur/exporteur.sh
+chmod +x exporteur.sh
+./exporteur.sh
