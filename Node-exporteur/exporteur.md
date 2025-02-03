@@ -27,7 +27,6 @@ The script performs the following steps:
 Clone or download this repository to your local machine.
 
 ```bash
-git clone https://github.com/ligums/SetupScript/blob/main/Node-exporteur/
-cd node_exporter-installation
+wget https://raw.githubusercontent.com/ligums/SetupScript/main/Node-exporteur/exporteur.sh
 chmod +x exporteur.sh
 ./exporteur.sh
